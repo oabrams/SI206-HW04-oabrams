@@ -1,5 +1,7 @@
+
 def question:
     x=input("What is your question?")
+
 
 import random
 
@@ -12,3 +14,8 @@ def question:
 
     random_answer = random.choice(answers)
     return random_answer
+
+    while x != "quit":
+        x=input("What is your question?")
+        if x[-1]!="?":
+            return "I'm sorry, I can only answer questions."
